@@ -31,7 +31,7 @@ export default function AboutPage() {
                 <div className="text-4xl font-extrabold text-primary mb-2">
                   {item.value}
                 </div>
-                <div className="text-sm text-gray-500 uppercase tracking-wide">{item.label}</div>
+                <div className="text-sm text-gray-600 uppercase tracking-wide">{item.label}</div>
               </div>
             ))}
           </div>
@@ -50,7 +50,7 @@ export default function AboutPage() {
             <h3 className="text-xl font-bold text-gray-900 mb-2">
               Trusted Since 2008
             </h3>
-            <p className="text-gray-500">
+            <p className="text-gray-600">
               {siteConfig.companyName} was established in {siteConfig.foundedYear} with a simple goal - {siteConfig.about.mission.toLowerCase()}
             </p>
           </div>
@@ -81,7 +81,7 @@ export default function AboutPage() {
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-gray-900 mb-3">Meet the Team</h2>
-            <p className="text-gray-500 max-w-xl mx-auto">
+            <p className="text-gray-600 max-w-xl mx-auto">
               The people behind nearly two decades of trusted HVAC service in the Inland Empire.
             </p>
           </div>
@@ -95,7 +95,7 @@ export default function AboutPage() {
                 </div>
                 <h3 className="text-lg font-bold text-gray-900">{member.name}</h3>
                 <p className="text-primary text-sm font-medium mb-3">{member.role}</p>
-                <p className="text-gray-500 text-sm leading-relaxed">{member.description}</p>
+                <p className="text-gray-600 text-sm leading-relaxed">{member.description}</p>
               </div>
             ))}
           </div>
@@ -106,7 +106,7 @@ export default function AboutPage() {
       <section className="py-16 md:py-20 bg-white">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl font-bold text-gray-900 mb-3">Service Areas</h2>
-          <p className="text-gray-500 mb-8">
+          <p className="text-gray-600 mb-8">
             We proudly serve homeowners and businesses across the Inland Empire.
           </p>
           <div className="flex flex-wrap justify-center gap-3">

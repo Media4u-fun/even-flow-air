@@ -97,7 +97,7 @@ export default function Footer() {
 
         {/* Bottom Bar */}
         <div className="border-t border-white/10 mt-8 pt-8 flex flex-col sm:flex-row items-center justify-between gap-4">
-          <p className="text-gray-500 text-sm">
+          <p className="text-gray-400 text-sm">
             &copy; {currentYear} {siteConfig.companyName}. All rights reserved.
           </p>
           {siteConfig.footer.credit && (
@@ -105,7 +105,7 @@ export default function Footer() {
               href="https://media4u.fun"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-gray-500 hover:text-gray-400 text-sm transition-colors"
+              className="text-gray-400 hover:text-gray-400 text-sm transition-colors"
             >
               Powered by Media4U
             </a>

@@ -55,7 +55,7 @@ export default function ContactPage() {
             {/* Contact Info */}
             <div className="space-y-6">
               <h2 className="text-2xl font-bold text-gray-900">Reach Us Directly</h2>
-              <p className="text-gray-500">
+              <p className="text-gray-600">
                 Prefer to talk? Give us a call. We answer fast.
               </p>
 
@@ -66,7 +66,7 @@ export default function ContactPage() {
                       <IconPhone className="w-5 h-5" />
                     </div>
                     <div>
-                      <div className="text-xs text-gray-500 uppercase tracking-wide mb-0.5">Phone</div>
+                      <div className="text-xs text-gray-600 uppercase tracking-wide mb-0.5">Phone</div>
                       <a href={`tel:${siteConfig.contact.phone.replace(/\D/g, "")}`} className="font-bold text-gray-900 hover:text-primary transition-colors">
                         {siteConfig.contact.phone}
                       </a>
@@ -80,7 +80,7 @@ export default function ContactPage() {
                       <IconMail className="w-5 h-5" />
                     </div>
                     <div>
-                      <div className="text-xs text-gray-500 uppercase tracking-wide mb-0.5">Email</div>
+                      <div className="text-xs text-gray-600 uppercase tracking-wide mb-0.5">Email</div>
                       <a href={`mailto:${siteConfig.contact.email}`} className="font-bold text-gray-900 hover:text-primary transition-colors">
                         {siteConfig.contact.email}
                       </a>
@@ -94,7 +94,7 @@ export default function ContactPage() {
                       <IconMapPin className="w-5 h-5" />
                     </div>
                     <div>
-                      <div className="text-xs text-gray-500 uppercase tracking-wide mb-0.5">Service Area</div>
+                      <div className="text-xs text-gray-600 uppercase tracking-wide mb-0.5">Service Area</div>
                       <div className="font-bold text-gray-900">{siteConfig.contact.address}</div>
                     </div>
                   </div>
@@ -117,7 +117,7 @@ export default function ContactPage() {
                 <div className="card-glow bg-gray-50 rounded-xl p-10 text-center">
                   <div className="text-5xl mb-4">✅</div>
                   <h3 className="text-2xl font-bold text-gray-900 mb-2">Message Sent!</h3>
-                  <p className="text-gray-500 mb-6">
+                  <p className="text-gray-600 mb-6">
                     Thanks for reaching out. We&apos;ll get back to you shortly.
                   </p>
                   <button

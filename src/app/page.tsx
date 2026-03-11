@@ -66,7 +66,7 @@ export default function HomePage() {
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-3">
               Our Services
             </h2>
-            <p className="text-gray-500 max-w-xl mx-auto">
+            <p className="text-gray-600 max-w-xl mx-auto">
               Full HVAC service for homes and businesses across the Inland Empire.
             </p>
           </div>
@@ -82,7 +82,7 @@ export default function HomePage() {
                 <h3 className="text-lg font-bold text-gray-900 mb-2">
                   {service.title}
                 </h3>
-                <p className="text-sm text-gray-500 leading-relaxed">
+                <p className="text-sm text-gray-600 leading-relaxed">
                   {service.description}
                 </p>
               </div>
@@ -108,7 +108,7 @@ export default function HomePage() {
                 <div className="text-4xl md:text-5xl font-extrabold text-primary mb-2">
                   {item.value}
                 </div>
-                <div className="text-sm text-gray-500 uppercase tracking-wide">{item.label}</div>
+                <div className="text-sm text-gray-600 uppercase tracking-wide">{item.label}</div>
               </div>
             ))}
           </div>
@@ -116,7 +116,7 @@ export default function HomePage() {
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
               Why Choose Even Flow?
             </h2>
-            <p className="text-gray-500 max-w-2xl mx-auto mb-8">
+            <p className="text-gray-600 max-w-2xl mx-auto mb-8">
               {siteConfig.about.mission}
             </p>
             <Link
@@ -152,7 +152,7 @@ export default function HomePage() {
                   </p>
                   <div>
                     <div className="font-bold text-gray-900 text-sm">{t.author}</div>
-                    <div className="text-xs text-gray-500">{t.company}</div>
+                    <div className="text-xs text-gray-600">{t.company}</div>
                   </div>
                 </div>
               ))}

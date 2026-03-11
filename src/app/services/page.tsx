@@ -36,7 +36,7 @@ export default function ServicesPage() {
                 <h2 className="text-xl font-bold text-gray-900 mb-3">
                   {service.title}
                 </h2>
-                <p className="text-gray-500 leading-relaxed">
+                <p className="text-gray-600 leading-relaxed">
                   {service.description}
                 </p>
               </div>

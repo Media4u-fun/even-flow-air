@@ -71,7 +71,7 @@ export default function GalleryPage() {
             <div className="text-center py-20">
               <div className="text-6xl mb-6">🔧</div>
               <h2 className="text-2xl font-bold text-gray-900 mb-3">Photos Coming Soon</h2>
-              <p className="text-gray-500 max-w-md mx-auto mb-8">
+              <p className="text-gray-600 max-w-md mx-auto mb-8">
                 We&apos;re loading up our portfolio with real job photos. In the meantime, give us a call to hear about our work.
               </p>
               <Link
