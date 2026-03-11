@@ -50,6 +50,7 @@ const jsonLd = {
   email: siteConfig.contact.email,
   address: {
     "@type": "PostalAddress",
+    streetAddress: "1700 Century Ave",
     addressLocality: "Riverside",
     addressRegion: "CA",
     postalCode: "92506",
@@ -71,8 +72,18 @@ const jsonLd = {
     { "@type": "City", name: "Corona" },
     { "@type": "City", name: "Moreno Valley" },
   ],
+  founder: {
+    "@type": "Person",
+    name: "Bryan Edwards",
+  },
   foundingDate: "2008-09-06",
   priceRange: "$$",
+  aggregateRating: {
+    "@type": "AggregateRating",
+    ratingValue: "5.0",
+    reviewCount: "2",
+    bestRating: "5",
+  },
   hasOfferCatalog: {
     "@type": "OfferCatalog",
     name: "HVAC Services",

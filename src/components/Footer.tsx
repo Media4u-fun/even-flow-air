@@ -65,6 +65,16 @@ export default function Footer() {
               )}
             </ul>
 
+            {/* Hours */}
+            <div className="mt-4 pt-3 border-t border-white/10">
+              <p className="text-gray-400 text-sm">
+                <span className="text-gray-300 font-medium">Hours:</span> Mon-Sat 7AM - 5PM
+              </p>
+              <p className="text-gray-400 text-sm mt-1">
+                <span className="text-gray-300 font-medium">License:</span> #917275
+              </p>
+            </div>
+
             {/* Social Links */}
             {socialLinks.length > 0 && (
               <div className="flex gap-3 mt-4">

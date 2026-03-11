@@ -10,7 +10,7 @@ export default function HomePage() {
         <div className="absolute inset-0 bg-gradient-to-b from-gray-900 via-gray-900 to-gray-800" />
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <span className="inline-block text-sm font-semibold px-4 py-1.5 rounded-full mb-6 tracking-wide uppercase bg-primary/15 text-primary border border-primary/30">
-            Riverside &amp; Inland Empire HVAC Experts
+            Top 9% California Contractor - Serving Riverside &amp; the Inland Empire
           </span>
           <h1 className="text-5xl md:text-6xl lg:text-7xl font-extrabold leading-tight mb-6 tracking-tight">
             {siteConfig.hero.headline}
