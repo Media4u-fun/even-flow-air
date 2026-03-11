@@ -2,7 +2,6 @@
 
 import { useState } from "react";
 import Link from "next/link";
-import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { siteConfig } from "@/config/site";
 import { IconMenu, IconX } from "./Icons";
@@ -16,15 +15,9 @@ export default function Header() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-18 py-2">
           {/* Logo */}
-          <Link href="/" className="flex items-center">
-            <Image
-              src="/images/1.jpg"
-              alt={siteConfig.companyName}
-              width={200}
-              height={60}
-              className="h-12 w-auto object-contain"
-              priority
-            />
+          <Link href="/" className="flex items-center gap-2">
+            <div className="w-9 h-9 bg-primary rounded-lg flex items-center justify-center text-white font-extrabold text-lg">EF</div>
+            <span className="text-white font-bold text-lg hidden sm:block">{siteConfig.companyName}</span>
           </Link>
 
           {/* Desktop Nav */}

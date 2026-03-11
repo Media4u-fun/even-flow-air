@@ -1,5 +1,4 @@
 import Link from "next/link";
-import Image from "next/image";
 import { siteConfig } from "@/config/site";
 import { ServiceIcon, IconChevronRight } from "@/components/Icons";
 
@@ -18,18 +17,6 @@ export default function HomePage() {
           <p className="text-lg md:text-xl text-gray-400 max-w-2xl mx-auto mb-8">
             {siteConfig.hero.subheadline}
           </p>
-
-          {/* Logo Image - the main visual */}
-          <div className="flex justify-center mb-10">
-            <Image
-              src="/images/1.jpg"
-              alt="Even Flow Heating and Air"
-              width={480}
-              height={480}
-              className="w-64 sm:w-80 md:w-96 h-auto drop-shadow-[0_0_40px_rgba(234,88,12,0.4)]"
-              priority
-            />
-          </div>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
