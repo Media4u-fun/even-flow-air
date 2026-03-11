@@ -33,31 +33,29 @@ export default function ContactPage() {
     }
   };
 
-  const inputClass = "w-full px-4 py-3 rounded-lg bg-[#0a0a0a] border border-white/10 text-white placeholder-gray-600 focus:border-primary focus:ring-1 focus:ring-primary/30 outline-none transition-all";
-  const labelClass = "block text-sm font-medium text-gray-400 mb-1.5";
+  const inputClass = "w-full px-4 py-3 rounded-lg bg-white border border-gray-300 text-gray-900 placeholder-gray-400 focus:border-primary focus:ring-1 focus:ring-primary/30 outline-none transition-all";
+  const labelClass = "block text-sm font-medium text-gray-700 mb-1.5";
 
   return (
     <>
       {/* Page Header */}
-      <section className="glow-bg relative bg-secondary text-white py-20">
+      <section className="relative bg-gray-900 text-white py-20">
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h1 className="text-glow text-4xl md:text-5xl font-extrabold mb-4">Get a Free Quote</h1>
+          <h1 className="text-4xl md:text-5xl font-extrabold mb-4">Get a Free Quote</h1>
           <p className="text-lg text-gray-400 max-w-2xl mx-auto">
             AC down? Need a new system? Fill out the form and we&apos;ll get back to you fast - same-day service available.
           </p>
         </div>
       </section>
 
-      <div className="glow-divider" />
-
-      <section className="py-16 md:py-20 bg-secondary">
+      <section className="py-16 md:py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
 
             {/* Contact Info */}
             <div className="space-y-6">
-              <h2 className="text-2xl font-bold text-white">Reach Us Directly</h2>
-              <p className="text-text-light">
+              <h2 className="text-2xl font-bold text-gray-900">Reach Us Directly</h2>
+              <p className="text-gray-500">
                 Prefer to talk? Give us a call. We answer fast.
               </p>
 
@@ -68,8 +66,8 @@ export default function ContactPage() {
                       <IconPhone className="w-5 h-5" />
                     </div>
                     <div>
-                      <div className="text-xs text-text-light uppercase tracking-wide mb-0.5">Phone</div>
-                      <a href={`tel:${siteConfig.contact.phone.replace(/\D/g, "")}`} className="font-bold text-white hover:text-primary transition-colors">
+                      <div className="text-xs text-gray-500 uppercase tracking-wide mb-0.5">Phone</div>
+                      <a href={`tel:${siteConfig.contact.phone.replace(/\D/g, "")}`} className="font-bold text-gray-900 hover:text-primary transition-colors">
                         {siteConfig.contact.phone}
                       </a>
                     </div>
@@ -82,8 +80,8 @@ export default function ContactPage() {
                       <IconMail className="w-5 h-5" />
                     </div>
                     <div>
-                      <div className="text-xs text-text-light uppercase tracking-wide mb-0.5">Email</div>
-                      <a href={`mailto:${siteConfig.contact.email}`} className="font-bold text-white hover:text-primary transition-colors">
+                      <div className="text-xs text-gray-500 uppercase tracking-wide mb-0.5">Email</div>
+                      <a href={`mailto:${siteConfig.contact.email}`} className="font-bold text-gray-900 hover:text-primary transition-colors">
                         {siteConfig.contact.email}
                       </a>
                     </div>
@@ -96,17 +94,17 @@ export default function ContactPage() {
                       <IconMapPin className="w-5 h-5" />
                     </div>
                     <div>
-                      <div className="text-xs text-text-light uppercase tracking-wide mb-0.5">Service Area</div>
-                      <div className="font-bold text-white">{siteConfig.contact.address}</div>
+                      <div className="text-xs text-gray-500 uppercase tracking-wide mb-0.5">Service Area</div>
+                      <div className="font-bold text-gray-900">{siteConfig.contact.address}</div>
                     </div>
                   </div>
                 )}
               </div>
 
               {/* Trust list */}
-              <div className="pt-4 space-y-2 border-t border-white/8">
+              <div className="pt-4 space-y-2 border-t border-gray-200">
                 {["Licensed (#917275) & Insured", "Same-Day Service Available", "Transparent Pricing", "Free Consultations"].map((t, i) => (
-                  <div key={i} className="flex items-center gap-2 text-sm text-gray-400">
+                  <div key={i} className="flex items-center gap-2 text-sm text-gray-600">
                     <span className="text-primary">✓</span> {t}
                   </div>
                 ))}
@@ -116,10 +114,10 @@ export default function ContactPage() {
             {/* Contact Form */}
             <div className="lg:col-span-2">
               {status === "sent" ? (
-                <div className="card-glow bg-surface rounded-xl p-10 text-center">
+                <div className="card-glow bg-gray-50 rounded-xl p-10 text-center">
                   <div className="text-5xl mb-4">✅</div>
-                  <h3 className="text-2xl font-bold text-white mb-2">Message Sent!</h3>
-                  <p className="text-text-light mb-6">
+                  <h3 className="text-2xl font-bold text-gray-900 mb-2">Message Sent!</h3>
+                  <p className="text-gray-500 mb-6">
                     Thanks for reaching out. We&apos;ll get back to you shortly.
                   </p>
                   <button
@@ -130,7 +128,7 @@ export default function ContactPage() {
                   </button>
                 </div>
               ) : (
-                <form onSubmit={handleSubmit} className="card-glow bg-surface p-8 rounded-xl space-y-5">
+                <form onSubmit={handleSubmit} className="card-glow bg-gray-50 p-8 rounded-xl space-y-5">
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
                     <div>
                       <label htmlFor="name" className={labelClass}>Name *</label>
@@ -178,9 +176,9 @@ export default function ContactPage() {
                         onChange={(e) => setFormData({ ...formData, service: e.target.value })}
                         className={inputClass + " cursor-pointer"}
                       >
-                        <option value="" className="bg-[#0a0a0a]">Select a service</option>
+                        <option value="">Select a service</option>
                         {siteConfig.services.map((s, i) => (
-                          <option key={i} value={s.title} className="bg-[#0a0a0a]">
+                          <option key={i} value={s.title}>
                             {s.title}
                           </option>
                         ))}
@@ -202,7 +200,7 @@ export default function ContactPage() {
                   </div>
 
                   {status === "error" && (
-                    <div className="bg-red-900/30 border border-red-500/30 rounded-lg p-3 text-red-400 text-sm">
+                    <div className="bg-red-50 border border-red-200 rounded-lg p-3 text-red-700 text-sm">
                       Something went wrong. Please call us directly at {siteConfig.contact.phone}.
                     </div>
                   )}
@@ -210,7 +208,7 @@ export default function ContactPage() {
                   <button
                     type="submit"
                     disabled={status === "sending"}
-                    className="btn-glow w-full sm:w-auto px-8 py-3 bg-primary text-white rounded-lg font-bold hover:bg-primary-dark transition-all disabled:opacity-50 disabled:cursor-not-allowed"
+                    className="w-full sm:w-auto px-8 py-3 bg-primary text-white rounded-lg font-bold hover:bg-primary-dark transition-all shadow-lg disabled:opacity-50 disabled:cursor-not-allowed"
                   >
                     {status === "sending" ? "Sending..." : "Send Message"}
                   </button>

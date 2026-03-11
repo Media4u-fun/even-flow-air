@@ -22,18 +22,16 @@ export default function GalleryPage() {
   return (
     <>
       {/* Page Header */}
-      <section className="glow-bg relative bg-secondary text-white py-20">
+      <section className="relative bg-gray-900 text-white py-20">
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h1 className="text-glow text-4xl md:text-5xl font-extrabold mb-4">Our Work</h1>
+          <h1 className="text-4xl md:text-5xl font-extrabold mb-4">Our Work</h1>
           <p className="text-lg text-gray-400 max-w-2xl mx-auto">
             Real jobs, real results - across Riverside and the Inland Empire.
           </p>
         </div>
       </section>
 
-      <div className="glow-divider" />
-
-      <section className="py-16 md:py-20 bg-secondary">
+      <section className="py-16 md:py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
           {/* Category Filter */}
@@ -45,8 +43,8 @@ export default function GalleryPage() {
                   onClick={() => setActiveCategory(cat)}
                   className={`px-5 py-2 rounded-full text-sm font-medium transition-all ${
                     activeCategory === cat
-                      ? "bg-primary text-white shadow-[0_0_12px_rgba(30,144,255,0.4)]"
-                      : "bg-white/5 border border-white/10 text-gray-400 hover:border-primary/40 hover:text-white"
+                      ? "bg-primary text-white shadow-md"
+                      : "bg-gray-100 border border-gray-200 text-gray-600 hover:border-primary/40 hover:text-gray-900"
                   }`}
                 >
                   {cat}
@@ -72,13 +70,13 @@ export default function GalleryPage() {
             /* Empty state - coming soon */
             <div className="text-center py-20">
               <div className="text-6xl mb-6">🔧</div>
-              <h2 className="text-2xl font-bold text-white mb-3">Photos Coming Soon</h2>
-              <p className="text-text-light max-w-md mx-auto mb-8">
+              <h2 className="text-2xl font-bold text-gray-900 mb-3">Photos Coming Soon</h2>
+              <p className="text-gray-500 max-w-md mx-auto mb-8">
                 We&apos;re loading up our portfolio with real job photos. In the meantime, give us a call to hear about our work.
               </p>
               <Link
                 href="/contact"
-                className="btn-glow inline-block px-8 py-4 bg-primary text-white rounded-lg font-bold hover:bg-primary-dark transition-all"
+                className="inline-block px-8 py-4 bg-primary text-white rounded-lg font-bold hover:bg-primary-dark transition-all shadow-lg"
               >
                 Get a Free Quote
               </Link>

@@ -9,7 +9,7 @@ export default function Footer() {
   const socialLinks = Object.entries(siteConfig.social).filter(([, url]) => url);
 
   return (
-    <footer className="bg-[#070707] border-t border-white/8 text-white">
+    <footer className="bg-gray-900 border-t border-gray-200 text-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {/* Company Info */}

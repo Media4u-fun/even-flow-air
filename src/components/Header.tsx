@@ -11,13 +11,13 @@ export default function Header() {
   const pathname = usePathname();
 
   return (
-    <header className="bg-[#070707] border-b border-white/8 sticky top-0 z-50">
+    <header className="bg-white border-b border-gray-200 sticky top-0 z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-18 py-2">
           {/* Logo */}
           <Link href="/" className="flex items-center gap-2">
             <div className="w-9 h-9 bg-primary rounded-lg flex items-center justify-center text-white font-extrabold text-lg">EF</div>
-            <span className="text-white font-bold text-lg hidden sm:block">{siteConfig.companyName}</span>
+            <span className="text-gray-900 font-bold text-lg hidden sm:block">{siteConfig.companyName}</span>
           </Link>
 
           {/* Desktop Nav */}
@@ -29,7 +29,7 @@ export default function Header() {
                 className={`px-4 py-2 rounded-lg text-sm font-medium transition-colors ${
                   pathname === link.href
                     ? "text-primary"
-                    : "text-gray-400 hover:text-white hover:bg-white/5"
+                    : "text-gray-600 hover:text-gray-900 hover:bg-gray-50"
                 }`}
               >
                 {link.label}
@@ -46,7 +46,7 @@ export default function Header() {
           {/* Mobile Menu Button */}
           <button
             onClick={() => setMobileOpen(!mobileOpen)}
-            className="md:hidden p-2 rounded-lg text-gray-400 hover:text-white hover:bg-white/5"
+            className="md:hidden p-2 rounded-lg text-gray-600 hover:text-gray-900 hover:bg-gray-100"
             aria-label="Toggle menu"
           >
             {mobileOpen ? <IconX className="w-6 h-6" /> : <IconMenu className="w-6 h-6" />}
@@ -56,7 +56,7 @@ export default function Header() {
 
       {/* Mobile Nav */}
       {mobileOpen && (
-        <div className="md:hidden border-t border-white/8 bg-[#0e0e0e]">
+        <div className="md:hidden border-t border-gray-200 bg-gray-50">
           <div className="px-4 py-3 space-y-1">
             {siteConfig.nav.map((link) => (
               <Link
@@ -66,7 +66,7 @@ export default function Header() {
                 className={`block px-4 py-3 rounded-lg text-sm font-medium transition-colors ${
                   pathname === link.href
                     ? "text-primary bg-primary/10"
-                    : "text-gray-400 hover:text-white hover:bg-white/5"
+                    : "text-gray-600 hover:text-gray-900 hover:bg-gray-100"
                 }`}
               >
                 {link.label}

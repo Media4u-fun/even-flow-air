@@ -11,9 +11,9 @@ export default function AboutPage() {
   return (
     <>
       {/* Page Header */}
-      <section className="glow-bg relative bg-secondary text-white py-20">
+      <section className="relative bg-gray-900 text-white py-20">
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h1 className="text-glow text-4xl md:text-5xl font-extrabold mb-4">
+          <h1 className="text-4xl md:text-5xl font-extrabold mb-4">
             About Us
           </h1>
           <p className="text-lg text-gray-400 max-w-2xl mx-auto">
@@ -22,39 +22,35 @@ export default function AboutPage() {
         </div>
       </section>
 
-      <div className="glow-divider" />
-
       {/* Stats */}
-      <section className="py-12 bg-surface">
+      <section className="py-12 bg-gray-50 border-b border-gray-200">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
             {siteConfig.about.highlights.map((item, i) => (
-              <div key={i} className="card-glow bg-secondary text-center p-6 rounded-xl">
-                <div className="text-glow text-4xl font-extrabold text-primary mb-2">
+              <div key={i} className="card-glow bg-white text-center p-6 rounded-xl">
+                <div className="text-4xl font-extrabold text-primary mb-2">
                   {item.value}
                 </div>
-                <div className="text-sm text-text-light uppercase tracking-wide">{item.label}</div>
+                <div className="text-sm text-gray-500 uppercase tracking-wide">{item.label}</div>
               </div>
             ))}
           </div>
         </div>
       </section>
 
-      <div className="glow-divider" />
-
       {/* Story */}
-      <section className="py-16 md:py-20 bg-secondary">
+      <section className="py-16 md:py-20 bg-white">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl font-bold text-white mb-6">Our Story</h2>
-          <p className="text-gray-400 leading-relaxed text-lg">
+          <h2 className="text-3xl font-bold text-gray-900 mb-6">Our Story</h2>
+          <p className="text-gray-600 leading-relaxed text-lg">
             {siteConfig.about.story}
           </p>
 
-          <div className="card-glow mt-12 p-6 bg-surface rounded-xl">
-            <h3 className="text-xl font-bold text-white mb-2">
+          <div className="card-glow mt-12 p-6 bg-gray-50 rounded-xl">
+            <h3 className="text-xl font-bold text-gray-900 mb-2">
               Trusted Since 2008
             </h3>
-            <p className="text-text-light">
+            <p className="text-gray-500">
               {siteConfig.companyName} was established in {siteConfig.foundedYear} with a simple goal - {siteConfig.about.mission.toLowerCase()}
             </p>
           </div>
@@ -69,7 +65,7 @@ export default function AboutPage() {
               "Residential & Commercial",
               "Proudly Serving Riverside & the Inland Empire",
             ].map((point, i) => (
-              <div key={i} className="flex items-center gap-3 text-gray-300">
+              <div key={i} className="flex items-center gap-3 text-gray-700">
                 <span className="text-primary font-bold text-lg">✓</span>
                 <span className="text-sm">{point}</span>
               </div>
@@ -78,12 +74,10 @@ export default function AboutPage() {
         </div>
       </section>
 
-      <div className="glow-divider" />
-
       {/* CTA */}
-      <section className="glow-bg relative py-20 bg-secondary">
+      <section className="relative py-20 bg-gray-900">
         <div className="relative z-10 max-w-4xl mx-auto px-4 text-center">
-          <h2 className="text-glow text-3xl font-extrabold text-white mb-4">
+          <h2 className="text-3xl font-extrabold text-white mb-4">
             Let&apos;s Work Together
           </h2>
           <p className="text-lg text-gray-400 mb-8">
@@ -92,7 +86,7 @@ export default function AboutPage() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
               href="/contact"
-              className="btn-glow inline-block px-8 py-4 bg-primary text-white rounded-lg font-bold hover:bg-primary-dark transition-all"
+              className="inline-block px-8 py-4 bg-primary text-white rounded-lg font-bold hover:bg-primary-dark transition-all shadow-lg"
             >
               Get a Free Quote
             </Link>
