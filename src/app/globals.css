@@ -1,0 +1,100 @@
+@import "tailwindcss";
+
+@theme inline {
+  --color-primary: var(--site-primary);
+  --color-primary-dark: var(--site-primary-dark);
+  --color-primary-light: var(--site-primary-light);
+  --color-secondary: var(--site-secondary);
+  --color-accent: var(--site-accent);
+  --color-surface: var(--site-surface);
+  --color-text-main: var(--site-text);
+  --color-text-light: var(--site-text-light);
+}
+
+:root {
+  --site-primary: #ea580c;
+  --site-primary-dark: #c2410c;
+  --site-primary-light: #fb923c;
+  --site-secondary: #070707;
+  --site-accent: #ea580c;
+  --site-surface: #0e0e0e;
+  --site-text: #e8e8e8;
+  --site-text-light: #888888;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  color: var(--site-text);
+  background-color: #070707;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Animated glow background */
+.glow-bg {
+  position: relative;
+  overflow: hidden;
+}
+.glow-bg::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse 80% 60% at 50% 0%, rgba(234, 88, 12, 0.13) 0%, transparent 70%);
+  animation: glowMove 18s ease-in-out infinite alternate;
+  pointer-events: none;
+  z-index: 0;
+}
+@keyframes glowMove {
+  0%   { transform: translateX(-15%) translateY(0); opacity: 0.8; }
+  50%  { transform: translateX(10%) translateY(6%); opacity: 1; }
+  100% { transform: translateX(-5%) translateY(-4%); opacity: 0.7; }
+}
+
+/* Blue glow on cards hover */
+.card-glow {
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+  border: 1px solid rgba(234, 88, 12, 0.12);
+}
+.card-glow:hover {
+  box-shadow: 0 0 24px rgba(234, 88, 12, 0.25), 0 4px 20px rgba(0,0,0,0.4);
+  transform: translateY(-3px);
+  border-color: rgba(234, 88, 12, 0.35);
+}
+
+/* Glowing button */
+.btn-glow {
+  box-shadow: 0 0 12px rgba(234, 88, 12, 0.4);
+  transition: box-shadow 0.3s ease, transform 0.2s ease;
+}
+.btn-glow:hover {
+  box-shadow: 0 0 24px rgba(234, 88, 12, 0.7);
+  transform: translateY(-1px);
+}
+
+/* Section divider glow line */
+.glow-divider {
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(234,88,12,0.5), transparent);
+}
+
+/* Image hover zoom effect for gallery */
+.img-zoom {
+  transition: transform 0.3s ease;
+}
+.img-zoom:hover {
+  transform: scale(1.05);
+}
+
+/* Text glow for headlines */
+.text-glow {
+  text-shadow: 0 0 30px rgba(234, 88, 12, 0.4);
+}
+
+/* Frost badge */
+.badge-frost {
+  background: rgba(234, 88, 12, 0.12);
+  border: 1px solid rgba(234, 88, 12, 0.3);
+  color: #fb923c;
+}
